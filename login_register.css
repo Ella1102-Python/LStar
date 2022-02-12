@@ -28,6 +28,16 @@ body {
     text-align: center;
 }
 
+.box a {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.box a:hover {
+    color: blue;
+}
+
 .box .inputBox {
     position: relative;
 }

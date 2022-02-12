@@ -1,0 +1,32 @@
+/* 响应式布局 */
+
+/* 响应式布局 - 屏幕尺寸小于 1100px 时，两列布局改为上下布局 */
+@media screen and (max-width: 1100px) {
+    .leftcolumn {
+        margin-left: 0%;
+        width: 100%;
+        padding: 0;
+    }
+    .rightcolumn {
+        margin-left: 0%;   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+    .leftcolumn {
+        margin-left: 0%;
+        width: 100%;
+        padding: 0;
+    }
+    .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

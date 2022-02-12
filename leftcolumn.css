@@ -1,0 +1,37 @@
+/* 左侧栏 */
+
+.leftcolumn {
+    float: left;
+    margin-left: 12%;
+    width: 47%;
+}
+
+/* 左栏卡片效果（均可自定义）  */
+.left_card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 左栏特色图片（均可自定义）  */
+.left_card .img {
+    float: left;
+    background-color: #f1f1f1;
+    margin: 20px;
+    width: 33%;
+    height: 80%;
+    text-align: center;
+}
+
+/* 左栏标题（实则是链接） */
+.left_card a {
+    overflow: hidden;
+    padding-left: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+.left_card a:hover {
+    overflow: hidden;
+    color: gold;
+}
