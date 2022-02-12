@@ -1,0 +1,272 @@
+/* 文章页 */
+
+/* 通用背景（所有属性均可自定义） */
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: url(bg-01.jpg);
+}
+
+/* 头部（站点图标和站点标题，均可自定义） */
+.pic {
+    float: left;
+    background-color: white;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+}
+
+.title {
+    background-color: white;
+    margin-left: 240px;
+    padding: 30px;
+    text-align: center;    
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+/* 导航条（均可自定义） */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航条链接（均可自定义）  */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 链接颜色修改（当鼠标放在链接上时） */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 下拉菜单 */
+/* 下拉菜单按钮 */
+.dropbtn {
+    background-color: lightgreen;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;    /* 鼠标：手型 */
+}
+
+/* 下拉菜单（行内块） */
+.dropdown {
+    position: absolute;    /* 绝对定位 */
+    top: 30px;
+    right: 5%;
+    display: inline-block;
+}
+
+/* 下拉菜单目录 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;    /* 段落最小宽度 */
+    box-shadow: 0px 8px 16px 0px rbga(0,0,0,0.2);    /* rgba：前三个为 rgb 值，第四个为透明度）*/
+}
+
+/* 下拉菜单目录中的链接格式 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* 当鼠标放在下拉菜单块上时，触发下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当鼠标放在下拉菜单块上时，改变块的颜色 */
+.dropdown:hover .dropbtn {
+    background-color: darkseagreen;
+}
+
+/* 按钮 */
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;    /* 圆角 */
+    text-align: center;
+    background-color: indianred;
+    font-size: 12px;
+    padding: 10px;
+    height: 15px;
+    width: 80px;
+    transition: all 0.5s;    /* 渐变 */
+    cursor: pointer;
+    position: relative;
+    /* right: -45%; 
+    top: 85%; */
+}
+
+.btn a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+/* 使用伪元素 after，制作箭头动画 */
+.btn a:after {
+    content: ">>";
+    position: absolute;
+    opacity: 0;    /* 完全透明 */
+    top: 0;
+    right: -20px;    /* 把图像的右边缘设置在其包含元素右边缘向左 -20 像素的位置 */
+    /* transition: 0.5s; */
+}
+
+/* 当鼠标移动到按钮上时，按钮元素向左 25px */
+.btn:hover a {
+    padding-right: 25px;
+    color: gold;
+}
+
+/* 当鼠标移动到按钮上时，触发箭头动画 */
+.btn:hover a:after {
+    opacity: 1;    /* 完全不透明，即完全显示 */
+    right: 0;    /* 把图像的右边缘设置在其包含元素右边缘向左 0 像素的位置，即恢复原状 */
+}
+
+/* 创建两列 */
+/* 左侧栏（文章正文） */
+.leftcolumn {
+    float: left;
+    margin-left: 12%;
+    width: 47%;
+}
+
+/* 右侧栏（均可自定义）  */
+.rightcolumn {
+    float: left;
+    width: 26%;
+    padding-left: 20px;
+}
+
+/* 左栏卡片效果（均可自定义）  */
+.left_card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* 左栏文章特色图片（均可自定义）  */
+.left_card .img {
+    float: left;
+    background-color: #f1f1f1;
+    margin: 20px;
+    width: 33%;
+    height: 80%;
+    text-align: center;
+}
+
+/* 左栏文章标题（实则是链接） */
+.left_card a {
+    overflow: hidden;
+    padding-left: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+.left_card a:hover {
+    overflow: hidden;
+    color: gold;
+}
+
+/* 右侧边栏卡片效果（均可自定义）  */
+.right_card {
+    background-color: white;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+/* 右侧边栏图片效果（均可自定义）  */
+.right_card .img {
+    float: left;
+    display: block;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 右侧边栏文章标题（实则是链接） */
+.right_card a {
+    overflow: hidden;
+    padding-left: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+.right_card a:hover {
+    overflow: hidden;
+    color: gold;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 底部（均可自定义） */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #f1f1f1;
+    margin-top: 20px;
+}
+
+/* 自适应（均可自定义，但修改数值不当容易让 UI 变得很丑，慎重修改！） */
+/* 响应式布局 - 屏幕尺寸小于 1100px 时，两列布局改为上下布局 */
+@media screen and (max-width: 1100px) {
+    .leftcolumn {
+        margin-left: 0%;
+        width: 100%;
+        padding: 20px;
+        padding: 0;
+    }
+    .rightcolumn {
+        margin-left: 0%;   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+    .leftcolumn {
+        margin-left: 0%;
+        width: 100%;
+        padding: 0;
+    }
+    .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
