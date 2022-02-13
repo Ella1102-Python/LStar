@@ -1,7 +1,72 @@
 /* 响应式布局 */
 
+/* 响应式布局 - 屏幕尺寸介于 1600 和 1100 之间时，调整比例 */
+@media screen and (max-width: 1600px) {
+    .leftcolumn {
+        margin-left: 8%;
+        width: 51%;
+        padding: 0;
+    }
+    .rightcolumn { 
+        width: 30%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .leftcolumn {
+        margin-left: 4%;
+        width: 55%;
+        padding: 0;
+    }
+    .rightcolumn { 
+        width: 34%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .leftcolumn {
+        margin-left: 0%;
+        width: 60%;
+        padding: 0;
+    }
+    .rightcolumn { 
+        width: 38%;
+        padding: 0;
+    }
+}
+
 /* 响应式布局 - 屏幕尺寸小于 1100px 时，两列布局改为上下布局 */
 @media screen and (max-width: 1100px) {
+    .leftcolumn {
+        margin-left: 8%;
+        width: 84%;
+        padding: 0;
+    }
+    .rightcolumn {
+        margin-left: 8%;   
+        width: 84%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 - 屏幕尺寸小于 950px 时，两列布局改为上下布局 */
+@media screen and (max-width: 950px) {
+    .leftcolumn {
+        margin-left: 5%;
+        width: 90%;
+        padding: 0;
+    }
+    .rightcolumn {
+        margin-left: 5%;   
+        width: 90%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
     .leftcolumn {
         margin-left: 0%;
         width: 100%;
